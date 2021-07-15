@@ -1,0 +1,31 @@
+@font-face {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    /* Браузер сначала попробует найти шрифт локально */
+    src: local("Inter"),
+         /* Если не получилось, загрузит woff2 */
+         url("/fonts/Inter-Regular.woff2") format("woff2"),
+         /* Если браузер не поддерживает woff2, загрузит woff */
+         url("/fonts/Inter-Regular.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    /* Браузер сначала попробует найти шрифт локально */
+    src: local("Inter"),
+         /* Если не получилось, загрузит woff2 */
+         url("/fonts/Inter-Bold.woff2") format("woff2"),
+         /* Если браузер не поддерживает woff2, загрузит woff */
+         url("/fonts/Inter-Bold.woff") format("woff");
+}
+
+body {
+    margin: 0;
+}
+
+h1, h2, h3, p {
+    margin: 0;
+}
